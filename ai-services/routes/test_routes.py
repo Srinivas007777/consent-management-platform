@@ -1,6 +1,5 @@
 from flask import Blueprint, request, jsonify
 from services.sanitizer import sanitize_input
-
 test_bp = Blueprint("test", __name__)
 
 @test_bp.route("/test", methods=["POST"])
